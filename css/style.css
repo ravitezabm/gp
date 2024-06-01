@@ -1,7 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
-
+html{ overflow-x:hidden !important; }
 .header_color {
   position: fixed;
 	z-index: 1000;
@@ -328,6 +328,7 @@ nav input{
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  overflow-x:clip;
 }
 
 
@@ -477,7 +478,6 @@ nav input{
   
 body{
     font-family:"Lato", sans-serif;
-    overflow-x: hidden;
 }
 /*Row And Column Section */
 .row {
@@ -3165,26 +3165,34 @@ a {
     display: flex;
     /* margin: 25px; */
 }
-}
+ }
+
+
 /* scrollbar */
+/* set the width and height of your scrollbar */
 ::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
+  width: 10px;
+  height: 10px;
+  background-color:rgb(42, 39, 113);
 }
 
+
+/*style the track of your scrollbar*/
 ::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgb(42, 39, 113);
-  -webkit-border-radius: 10px;
   border-radius: 10px;
+  background-color: rgba(0,255,255,0.1);
+  transform: translate(-50%, -50%);
 }
 
+/*change background color of your scrollbar on hover*/
+::-webkit-scrollbar:hover {
+  background-color: rgb(42, 39, 113, 0.3);
+} 
+
+
+/*style the thumb of your scrollbar*/
 ::-webkit-scrollbar-thumb {
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-  background: rgba(243, 129, 32,);
-  -webkit-box-shadow: inset 0 0 50px rgb(243 129 32);
-}
+  background: rgb(243, 129, 32); 
+  border-radius: 0px;
 
-::-webkit-scrollbar-thumb:window-inactive {
-  background: rgba(255, 255, 255,);
 }
