@@ -3853,7 +3853,7 @@ print {
   font-family: "Open Sans", sans-serif;
 }
 .custom-social-proof .custom-notification {
-  width: 400px;
+  /* width: 400px; */
   border: 0;
   text-align: left;
   z-index: 99999;
@@ -3861,7 +3861,7 @@ print {
   font-weight: 400;
   border-radius: 6px;
   box-shadow: 2px 2px 10px 2px rgba(11, 10, 10, 0.2);
-  background-color: #292560;
+  background-color: #2a2771;
   position: relative;
   cursor: pointer;
 }
@@ -3961,18 +3961,17 @@ print {
     text-transform: uppercase;
     color: #475747;
     font-size: 3em;
-    font-weight: 900;
+    font-weight: 300;
     flex-shrink: 0;
-    padding: 0 10px;
+    padding: 60px 10px;
     width: max-content;
     display: flex;
     align-items: center;
     transform: translateX(0);
     animation: b-text-scroll 35s linear infinite;
-
-    -webkit-text-fill-color: #ffffff;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #000000;
+    /* -webkit-text-fill-color: #ffffff; */
+    /* -webkit-text-stroke-width: 1px; */
+    /* -webkit-text-stroke-color: #000000; */
 }
 @keyframes b-text-scroll {
   0% { transform: translate3d(0, 0, 0); }
@@ -4250,12 +4249,91 @@ figure.testimonial .peopl h3 {
 
 /* sustainability */
 
-.susbg{
-  background: url(../images/susbgo.png), rgb(0 0 0 / 23%);
-    width: 100%;
-    height: 100%;
-    display: block;
-    /* background-attachment: fixed; */
+/* Override UGG site */
+/* Helpers */
+/**************************/
+.margin-top-10 {padding-top:10px;}
+.margin-bot-10 {padding-bottom:10px;}
+
+/* Typography */
+/**************************/
+#parallax-world-of-ugg h1 { font-size:24px; font-weight:400; text-transform: uppercase; color:black; padding:0; margin:0;}
+#parallax-world-of-ugg h2 {
+  font-size: 50px;
+  /* letter-spacing: 10px; */
+  text-align: center;
+  color: white;
+  font-weight: 900;
+  /* text-transform: uppercase; */
+  z-index: 10;
+  /* opacity: .9;*/
+}
+#parallax-world-of-ugg h3 { font-size:14px; line-height:0; font-weight:400; letter-spacing:8px; text-transform: uppercase; color:black;}
+#parallax-world-of-ugg p { font-size: 24px;
+  line-height: 35px;
+  font-weight: 600;}
+.first-character {font-weight:400; float: left; font-size: 84px; line-height: 64px; padding-top: 4px; padding-right: 8px; padding-left: 3px; font-family: 'Source Sans Pro', sans-serif;}
+
+.sc {color: #3b8595;}
+.ny {color: #3d3c3a;}
+.atw {color: #c48660;}
+
+/* Section - Title */
+/**************************/
+#parallax-world-of-ugg .title {background: white; padding: 60px; margin:0 auto; text-align:center;}
+#parallax-world-of-ugg .title h1 {font-size:35px; letter-spacing:8px;}
+
+/* Section - Block */
+/**************************/
+#parallax-world-of-ugg .block {padding: 60px 0 0 0;
+  width: 900px;
+  margin: 0 auto;
+  text-align: justify;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;}
+#parallax-world-of-ugg .block-gray {background: #f2f2f2;padding: 60px;}
+#parallax-world-of-ugg .section-overlay-mask {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: black; opacity: 0.70;}
+
+/* Section - Parallax */
+/**************************/
+#parallax-world-of-ugg .parallax-one {padding-top: 200px; padding-bottom: 200px; overflow: hidden; position: relative; width: 100%; background-image: url(../images/30622.jpg); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: top center;}
+#parallax-world-of-ugg .parallax-two {padding-top: 200px; padding-bottom: 200px; overflow: hidden; position: relative; width: 100%; background-image: url(../images//324.jpg); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;}
+
+/* Extras */
+/**************************/
+#parallax-world-of-ugg .line-break {border-bottom:1px solid black; width: 150px; margin:0 auto;}
+
+/* Media Queries */
+/**************************/
+@media screen and (max-width: 959px) and (min-width: 768px) {
+  #parallax-world-of-ugg .block {padding: 40px; width:620px;}
+}
+@media screen and (max-width: 767px) {
+  #parallax-world-of-ugg .block {padding: 30px; width:420px;}
+  #parallax-world-of-ugg h2 {font-size:30px;}
+  #parallax-world-of-ugg .block {padding: 30px;}
+  #parallax-world-of-ugg .parallax-one, #parallax-world-of-ugg .parallax-two, #parallax-world-of-ugg .parallax-three {padding-top:100px; padding-bottom:100px;}
+}
+@media screen and (max-width: 479px) {
+  #parallax-world-of-ugg .block {padding: 30px 15px; width:290px;}
+}
+
+.ce{
+
+  background: url(../images/Circular\ Economy-01.jpg);
+  width: 100%;
+  height: auto;
+  display: block;
+  
+
+    background-attachment: fixed;
+    z-index: 99999999999;
+    margin: 35px 0 50px 0;
+    top: 0;
+    padding-top: 100px;
+    padding-bottom: 100px;
     background-blend-mode: multiply;
     background-position: center center;
     background-repeat: no-repeat;
@@ -4263,4 +4341,14 @@ figure.testimonial .peopl h3 {
     align-items: center;
     text-align: center;
     margin: auto;
+}
+.round-img{
+  border-radius: 50%;
+  width: 70%;
+    height: 350px;
+}
+
+.round-img-text{
+  line-height: 1.5;
+    padding: 34px 0 0 0;
 }
