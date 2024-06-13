@@ -21,12 +21,11 @@
       <li>
         <a href="#" class="desktop-item">Products</a>
         <input type="checkbox" id="showDrop">
-        <label for="showDrop" class="mobile-item">Dropdown Menu</label>
+        <label for="showDrop" class="mobile-item">Products</label>
         <ul class="drop-menu">
           <li><a href="ffs.html">FFS Bags Heavy Duty PE Film</a></li>
-          <li><a style="font-size: 14px;margin: 0px 0 0 25px;" href="#">subProduct1</a></li>
-          <li><a style="font-size: 14px;margin: 0px 0 0 25px;" href="#">subProduct2</a></li>
-          <li><a href="ffs.html">FFS Bags Heavy Duty PE Film</a></li>
+          <!-- <li><a style="font-size: 14px;margin: 0px 0 0 25px;" href="#">subProduct1</a></li>
+          <li><a style="font-size: 14px;margin: 0px 0 0 25px;" href="#">subProduct2</a></li> -->
           <li><a href="pp.html">PP Woven Sacks</a></li>
           <li><a href="dpc.html">Disposable Plastic Containers</a></li>
           <li><a href="pe.html">PE Liners</a></li>
@@ -48,8 +47,8 @@
     </ul>
     <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
   </div>
-</div>
-</nav>
+  </div>
+  </nav>
     <div class="container_full">
         <div class="row">
           <div style="padding: 0 !important;" class="mob-12 tab-12 des-12 column">
@@ -115,7 +114,7 @@
                     <span class="circle two"></span>
           
                     <form action="index.html" autocomplete="off">
-                      <h3 style="width: auto;display: block;" class="title">Message</h3>
+                      <h3 style="width: auto;display: block;color: #ffffff;" class="title">Message</h3>
                       <div class="input-container">
                         <input type="text" name="name" class="input" />
                         <label for="">Username</label>
@@ -230,6 +229,19 @@ product innovation and the utilization of advanced manufacturing technologies, G
       </div>
   </div>
 </div>
+<!-- popup -->
+<section class="custom-social-proof">
+  <div class="custom-notification">
+    <div class="custom-notification-container">
+      <div class="custom-notification-image-wrapper">
+        <a class="poweredby" href="Brochure Design Final.pdf" target="_blank">
+        <img id="map1" src="images/dwld brh-01.png" style="width: 100%; height: auto">
+      </a>
+      </div>
+    </div>
+    <div class="custom-close"></div>
+  </div>
+</section>
 <!-- menu animation -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script>
@@ -244,7 +256,26 @@ product innovation and the utilization of advanced manufacturing technologies, G
     });
 });
 </script>
+<script id="rendered-js" >
+  //brochure popup
+setInterval(function () {$(".custom-social-proof").stop().slideToggle('slow');}, 3000);
+$(".custom-close").click(function () {
+$(".custom-social-proof").stop().slideToggle('slow');
+});
+setInterval(function () {
+var myNumber = Math.floor(7 * Math.random());
+$("#map1").attr("src", r_map[myNumber]);
+$('#country').text(r_text[myNumber]);
 
+$('#product').text(r_product[Math.floor(7 * Math.random())]);
+var timeVal = Math.floor(7 * Math.random());
+
+$('#time').text(timeVal);
+
+
+//console.log(timeVal); 
+}, 6000);
+</script>
 
 </body>
 </html>

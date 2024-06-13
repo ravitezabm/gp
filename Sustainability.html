@@ -11,54 +11,56 @@
     <title>Document</title>
 </head>
 <body>
-    <nav>
-        <div class="header_color">
-      <div class="wrapper">
-        <div class="lgo"><img class="brand" src="images/gpi main logo-01.png"/></div>
-        <input type="radio" name="slider" id="menu-btn">
-        <input type="radio" name="slider" id="close-btn">
-        <ul class="nav-links">
-          <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="aboutus.html">About Us</a></li>
-          <li>
-            <a href="#" class="desktop-item">Products</a>
-            <input type="checkbox" id="showDrop">
-            <label for="showDrop" class="mobile-item">Dropdown Menu</label>
-            <ul class="drop-menu">
-              <li><a href="ffs.html">FFS Bags Heavy Duty PE Film</a></li>
-              <li><a style="font-size: 14px;margin: 0px 0 0 25px;" href="#">subProduct1</a></li>
-              <li><a style="font-size: 14px;margin: 0px 0 0 25px;" href="#">subProduct2</a></li>
-              <li><a href="ffs.html">FFS Bags Heavy Duty PE Film</a></li>
-              <li><a href="pp.html">PP Woven Sacks</a></li>
-              <li><a href="dpc.html">Disposable Plastic Containers</a></li>
-              <li><a href="pe.html">PE Liners</a></li>
-              <li><a href="5.html">5</a></li>
-              <li><a href="5.html">6</a>
-              </li>
-            </ul>
+  <nav>
+    <div class="header_color">
+  <div class="wrapper">
+    <div class="lgo"><img class="brand" src="images/gpi main logo-01.png"/></div>
+    <input type="radio" name="slider" id="menu-btn">
+    <input type="radio" name="slider" id="close-btn">
+    <ul class="nav-links">
+      <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li>
+        <a href="#" class="desktop-item">Products</a>
+        <input type="checkbox" id="showDrop">
+        <label for="showDrop" class="mobile-item">Products</label>
+        <ul class="drop-menu">
+          <li><a href="ffs.html">FFS Bags Heavy Duty PE Film</a></li>
+          <!-- <li><a style="font-size: 14px;margin: 0px 0 0 25px;" href="#">subProduct1</a></li>
+          <li><a style="font-size: 14px;margin: 0px 0 0 25px;" href="#">subProduct2</a></li> -->
+          <li><a href="pp.html">PP Woven Sacks</a></li>
+          <li><a href="dpc.html">Disposable Plastic Containers</a></li>
+          <li><a href="pe.html">PE Liners</a></li>
+          <li><a href="5.html">5</a></li>
+          <li><a href="5.html">6</a>
           </li>
-          <li><a href="Sustainability.html">Sustainability</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="facilities.html">Facilities</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contactus.html">Contact Us</a></li>
-          <!-- <li>
-          <a style="background: none;" href="Brochure Design Final.pdf" download type="" id="btn_9565" class="btn_9565 btn-primary">
-            <span class="txt_1265 ">Download Brochure</span>
-          </a>
-        </li> -->
         </ul>
-        <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
-      </div>
-    </div>
-    </nav>
+      </li>
+      <li><a href="Sustainability.html">Sustainability</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="facilities.html">Facilities</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contactus.html">Contact Us</a></li>
+      <!-- <li>
+      <a style="background: none;" href="Brochure Design Final.pdf" download type="" id="btn_9565" class="btn_9565 btn-primary">
+        <span class="txt_1265 ">Download Brochure</span>
+      </a>
+    </li> -->
+    </ul>
+    <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+  </div>
+  </div>
+  </nav>
     <div class="container_full">
         <div class="row">
           <div style="padding: 0 !important;" class="mob-12 tab-12 des-12 column">
-              <div class="head_bg_img">
-                <div class="head_bg_txt"><h3>Sustainability</h3></div>
-              </div>
+            <div class="video-wrapper">
+            <video autoplay muted loop playsinline preload="metdata">
+              <source src="images/gulf plastic web.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
           </div>
         </div>
     </div>
@@ -295,7 +297,19 @@
         </div>
     </div>
   </div>
-
+<!-- popup -->
+<section class="custom-social-proof">
+  <div class="custom-notification">
+    <div class="custom-notification-container">
+      <div class="custom-notification-image-wrapper">
+        <a class="poweredby" href="Brochure Design Final.pdf" target="_blank">
+        <img id="map1" src="images/dwld brh-01.png" style="width: 100%; height: auto">
+      </a>
+      </div>
+    </div>
+    <div class="custom-close"></div>
+  </div>
+</section>
 <!-- menu animation -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script>
@@ -314,7 +328,26 @@
   AOS.init();
 </script>
 
+<script id="rendered-js" >
+  //brochure popup
+setInterval(function () {$(".custom-social-proof").stop().slideToggle('slow');}, 3000);
+$(".custom-close").click(function () {
+$(".custom-social-proof").stop().slideToggle('slow');
+});
+setInterval(function () {
+var myNumber = Math.floor(7 * Math.random());
+$("#map1").attr("src", r_map[myNumber]);
+$('#country').text(r_text[myNumber]);
 
+$('#product').text(r_product[Math.floor(7 * Math.random())]);
+var timeVal = Math.floor(7 * Math.random());
+
+$('#time').text(timeVal);
+
+
+//console.log(timeVal); 
+}, 6000);
+</script>
 
 </body>
 </html>
