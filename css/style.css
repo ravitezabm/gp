@@ -84,8 +84,8 @@ nav .wrapper {
 .nav-links li a {
   color: #f2f2f2;
   text-decoration: none;
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 14px;
+  font-weight: 700;
   padding: 9px 15px;
   border-radius: 5px;
   transition: all 0.3s ease;
@@ -4238,7 +4238,8 @@ print {
 	padding-bottom: 40px;
 }
 .indentity {
-	margin: 0!important
+	margin: 0!important;
+  font-size: 16px;
 }
 figure.testimonial {
 	position: relative;
@@ -4272,6 +4273,7 @@ figure.testimonial blockquote {
 	margin: 0;
 	padding: 25px 50px 30px;
 	position: relative;
+  margin: 0px 0 30px 0;
 }
 figure.testimonial blockquote:before, figure.testimonial blockquote:after {
 	content: "\201C";
@@ -4301,16 +4303,19 @@ figure.testimonial .btn {
 }
 figure.testimonial .peopl {
 	position: absolute;
-	bottom: 45px;
-	padding: 0 10px 0 120px;
-	margin: 0;
-	color: #ffffff;
-	-webkit-transform: translateY(50%);
-	transform: translateY(50%);
+    bottom: 0px;
+    padding: 0px 10px 2px 120px;
+    margin: 0;
+    color: #ffffff;
+    -webkit-transform: translateY(50%);
+    transform: translateY(50%);
+    display: contents;
 }
 figure.testimonial .peopl h3 {
 	opacity: 0.9;
 	margin: 0;
+  font-weight: 400;
+  font-size: 24px;
 }
 .slick-slider {
 	position: relative;
@@ -4537,8 +4542,8 @@ figure.testimonial .peopl h3 {
 
 /* Section - Parallax */
 /**************************/
-#parallax-world-of-ugg .parallax-one {padding-top: 200px; padding-bottom: 200px; overflow: hidden; position: relative; width: 100%; background-image: url(../images/30622.jpg); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: top center;}
-#parallax-world-of-ugg .parallax-two {padding-top: 200px; padding-bottom: 200px; overflow: hidden; position: relative; width: 100%; background-image: url(../images//324.jpg); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;}
+#parallax-world-of-ugg .parallax-one {padding-top: 200px; padding-bottom: 200px; overflow: hidden; position: relative; width: 100%; background-image: url(../images/Sustainability\ 01.jpg); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: top center;}
+#parallax-world-of-ugg .parallax-two {padding-top: 200px; padding-bottom: 200px; overflow: hidden; position: relative; width: 100%; background-image: url(../images/Sustainability\ 02.jpg); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;}
 
 /* Extras */
 /**************************/
