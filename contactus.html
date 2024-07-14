@@ -17,26 +17,41 @@
     <ul class="nav-links">
       <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
       <li><a href="index.html">Home</a></li>
-      <li><a href="aboutus.html">About Us</a></li>
+      <li>
+        <a href="#" class="desktop-item">About Us</a>
+        <input type="checkbox" id="showDrop">
+        <label for="showDrop" class="mobile-item">Products</label>
+        <ul class="drop-menu">
+          <li><a href="aboutuscompany.html">Company</a></li>
+          <!-- <li><a style="font-size: 14px;margin: 0px 0 0 25px;" href="#">subProduct1</a></li>
+          <li><a style="font-size: 14px;margin: 0px 0 0 25px;" href="#">subProduct2</a></li> -->
+          <li><a href="aboutusboardofdirectors.html">Board of Directors</a></li>
+          <li><a href="aboutuschairmanmessage.html">Chairman Messages</a></li>
+          <li><a href="aboutusexecutivemanagement.html">Executive Management</a></li>
+          <li><a href="aboutusourteam.html">Our Team</a></li>
+          <li><a href="aboutuscertificateandmembership.html">Certificates & Membership</a>
+          </li>
+        </ul>
+      </li>
       <li>
         <a href="#" class="desktop-item">Products</a>
         <input type="checkbox" id="showDrop">
         <label for="showDrop" class="mobile-item">Products</label>
         <ul class="drop-menu">
-          <li><a href="ffs.html">FFS Bags Heavy Duty PE Film</a></li>
+          <li><a href="fibc.html">FIBC or Jumbo Bag</a></li>
           <!-- <li><a style="font-size: 14px;margin: 0px 0 0 25px;" href="#">subProduct1</a></li>
           <li><a style="font-size: 14px;margin: 0px 0 0 25px;" href="#">subProduct2</a></li> -->
+          <li><a href="ffs.html">FFS Bags Heavy Duty PE Film</a></li>
           <li><a href="pp.html">PP Woven Sacks</a></li>
           <li><a href="dpc.html">Disposable Plastic Containers</a></li>
-          <li><a href="pe.html">PE Liners</a></li>
-          <li><a href="5.html">5</a></li>
-          <li><a href="5.html">6</a>
+          <li><a href="pe.html">PE Liner</a></li>
+          <li><a href="ppc.html">PP Container Liner</a>
           </li>
         </ul>
       </li>
+      <li><a href="quality.html">Quality</a></li>
       <li><a href="Sustainability.html">Sustainability</a></li>
       <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="facilities.html">Facilities</a></li>
       <li><a href="blog.html">Blog</a></li>
       <li><a href="contactus.html">Contact Us</a></li>
       <!-- <li>
@@ -63,22 +78,25 @@
           <div style="padding: 0 !important;" class="mob-12 tab-12 des-12 column">
             
             <div class="container_form">
-                <span class="big-circle"></span>
+                <!-- <span class="big-circle"></span> -->
                 <img src="img/shape.png" class="square" alt="" />
                 <div class="form">
                   <div class="contact-info">
-                    <h3 style="width: auto;display: block;" class="title">Let's get in touch</h3>
-                    <p class="text">
+                    <h3 style="width: auto;display: block;height: auto;" class="title">Let's get in touch</h3>
+                    <!-- <p class="text">
                       Most Advanced Manufacturer of FIBC, FFS Bags and Plastic Packaging Products
-                    </p>
+                    </p> -->
           
                     <div class="info">
                       <div class="information">
                         <i class="fas fa-map-marker-alt"></i> &nbsp &nbsp
           
-                        <p>Gulf Plastic Industries SAOC
-                          PO Box 55 PC 124 Rusayl
-                          Muscat- Sultanate of Oman</p>
+                        <p>Gulf Plastic Industries Co. (SAOC)
+                          PO Box 55 Postal Code 124</br>
+                          Rusayl Industrial City</br>
+                          Rusayl, Muscat,</br>
+                          Sultanate of Oman
+                        </p>
                       </div>
                       <div class="information">
                         <i class="fas fa-envelope"></i> &nbsp &nbsp
@@ -117,8 +135,8 @@
                       <h3 style="width: auto;display: block;color: #ffffff;" class="title">Message</h3>
                       <div class="input-container">
                         <input type="text" name="name" class="input" />
-                        <label for="">Username</label>
-                        <span>Username</span>
+                        <label for="">Name</label>
+                        <span>Name</span>
                       </div>
                       <div class="input-container">
                         <input type="email" name="email" class="input" />
@@ -130,6 +148,23 @@
                         <label for="">Phone</label>
                         <span>Phone</span>
                       </div>
+                      <div class="dropdown">
+                        <div class="select">
+                            <span class="selected">FIBC Bag or Jumbo Bag</span>
+                            <div class="caret"></div>
+                        </div>
+                        <ul class="menu">
+                          <li>FIBC Bag or Jumbo Bag</li>
+                            <li>FFS PE Heavy Duty Film</li>
+                            <li>PP Woven Sack</li>
+                            <li>Disposable Cups or Bowls</li>
+                            <li>Trays and Punnets</li>
+                            <li>Shrink Film</li>
+                            <li>PE Liner</li>
+                            <!-- <li class="active">PE Liner</li> -->
+                        </ul>
+                    </div>
+                
                       <div class="input-container textarea">
                         <textarea name="message" class="input"></textarea>
                         <label for="">Message</label>
@@ -152,7 +187,7 @@
             
 
           <div class="responsive-map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6327185.821620442!2d56.08872909541254!3d22.950543660903644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e8e07e22716d927%3A0xa0bdc5fb5aa5b723!2sGulf%20Plastic%20Industries%20Co%20SAOC%20-%20Cup%20Division!5e0!3m2!1sen!2sin!4v1716919138594!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.3319187842967!2d58.217999000000006!3d23.5565197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e8e07a325e4a101%3A0xf4d762f3b8027c00!2zR3VsZiBQbGFzdGljIEluZHVzdHJpZXMgQ28g2LTYsdmD2Kkg2KfZhNiu2YTZitisINmE2YTYtdmG2KfYudin2Kog2KfZhNio2YTYp9iz2KrZitmD2YrYqQ!5e0!3m2!1sen!2sin!4v1719910895926!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
 
 
         </div>
@@ -160,65 +195,35 @@
   </div>
 
  <!-- footer -->
-<footer class="main-footer">
-  <div  class="container_half">
-      <div class="footer-content">
-          <div class="row">
-              <div class="mob-12 tab-12 des-2 column footer-column">
-                  <div class="logo-widget footer-widget">
-                      <div class="logo-box"><a href="#"><img src="images/gpi main logo-011-01.png" alt=""></a></div>
-                      <!--
-                      <div class="footer-text">
-                          <p>dolore magna aliquaea commodo conse quatuis aute irure.</p>
-                      </div>
-                      -->
-                      <ul class="ul-footer footer-social">
-                          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                          <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
-                          <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                          <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
-                      </ul>
+ <div style="background-color: #282560;" class="footer-bottom">
+  <div class="container_half">
+      <div style="float: none; !important" class="row">
+          <div class="mob-12 tab-12 des-12 column text-center">
+            <div style="padding: 10px 0px 8px 0px;" class="footer-content">
+              <div class="logo-widget footer-widget">
+                  <!--
+                  <div class="footer-text">
+                      <p>dolore magna aliquaea commodo conse quatuis aute irure.</p>
                   </div>
+                  -->
+                  <ul class="ul-footer footer-social">
+                      <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                      <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                      <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                      <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                  </ul>
               </div>
-              <div class="mob-12 tab-12 des-4 column footer-column">
-                  <div class="service-widget footer-widget">
-                      <p style="font-weight: 200;font-size: 18px;">
-                        Through a commitment to continuous
-product innovation and the utilization of advanced manufacturing technologies, Gulf Plastic Industries now represents the market leading producer of flexible intermediate bulk containers (FIBC), polypropylene woven sacks, FFS heavy duty sack - PE Roll and plastic disposable products.
-                      </p>
-                  </div>
-              </div>
-              <div class="mob-12 tab-12 des-3 column footer-column">
-                <div class="service-widget footer-widget">
-                    <div class="footer-title">Our Company</div>
-                    <ul class="ul-footer list">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Product</a></li>
-                        <li><a href="#">Quality</a></li>
-                        <li><a href="#">Facilities</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                    </ul>
-                </div>
             </div>
-              <div class="mob-12 tab-12 des-3 column footer-widget">
-                  <div class="contact-widget footer-widget">
-                      <div class="footer-title">Get in touch with us</div>
-                      <div class="footer-text">
-                          <span>Gulf Plastic Industries SAOC PO Box 55 PC 124 Rusayl Muscat- Sultanate of Oman</span>
-                          <span>+968 2444 6688, +968 2444 6699</span>
-                          <span>info@gulfplasticoman.com</span>
-                      </div>
-                  </div>
-                  <button a href="#" type="button" id="btn_9566" class="btn_9566 m16 btn btn-primary">
-                    <span class="txt_1266 ">Contact Us for more</span>
-                  </button>
-              </div>
-              
+              <div class="copyright">Gulf Plastic Industries Co. (SAOC), PO Box 55, Postal Code 124, Rusayl, Muscat, Sultanate of Oman</div> 
+              <button type="button" id="btn_9566" class="btn_9566 m16 btn btn-primary">
+                <a class="txt_1266" href="contactus.html">Contact Us</a>
+              </button>
           </div>
       </div>
   </div>
-</footer>
+</div>
+
+
 <!-- main-footer end -->
 <div class="footer-bottom">
   <div class="container_half">
@@ -229,6 +234,32 @@ product innovation and the utilization of advanced manufacturing technologies, G
       </div>
   </div>
 </div>
+<!-- dropdown menu form -->
+<script id="rendered-js" >
+  const dropdown = document.querySelector(".dropdown");
+  const select = dropdown.querySelector(".select");
+  const caret = dropdown.querySelector(".caret");
+  const menu = dropdown.querySelector(".menu");
+  const options = dropdown.querySelectorAll(".menu li");
+  const selected = dropdown.querySelector(".selected");
+  select.addEventListener("click", () => {
+    select.classList.toggle("select-clicked");
+    caret.classList.toggle("caret-rotate");
+    menu.classList.toggle("menu-open");
+  });
+  options.forEach(option => {
+    option.addEventListener("click", () => {
+      selected.innerText = option.innerText;
+      select.classList.remove("select-clicked");
+      caret.classList.remove("caret-rotate");
+      menu.classList.remove("menu-open");
+      options.forEach(option => {
+        option.classList.remove("active");
+      });
+      option.classList.add("active");
+    });
+  });
+      </script>
 <!-- popup -->
 <section class="custom-social-proof">
   <div class="custom-notification">

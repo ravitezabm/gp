@@ -26,26 +26,41 @@
       <ul class="nav-links">
         <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
         <li><a href="index.html">Home</a></li>
-        <li><a href="aboutus.html">About Us</a></li>
+        <li>
+          <a href="#" class="desktop-item">About Us</a>
+          <input type="checkbox" id="showDrop">
+          <label for="showDrop" class="mobile-item">Products</label>
+          <ul class="drop-menu">
+            <li><a href="aboutuscompany.html">Company</a></li>
+            <!-- <li><a style="font-size: 14px;margin: 0px 0 0 25px;" href="#">subProduct1</a></li>
+            <li><a style="font-size: 14px;margin: 0px 0 0 25px;" href="#">subProduct2</a></li> -->
+            <li><a href="aboutusboardofdirectors.html">Board of Directors</a></li>
+            <li><a href="aboutuschairmanmessage.html">Chairman Messages</a></li>
+            <li><a href="aboutusexecutivemanagement.html">Executive Management</a></li>
+            <li><a href="aboutusourteam.html">Our Team</a></li>
+            <li><a href="aboutuscertificateandmembership.html">Certificates & Membership</a>
+            </li>
+          </ul>
+        </li>
         <li>
           <a href="#" class="desktop-item">Products</a>
           <input type="checkbox" id="showDrop">
           <label for="showDrop" class="mobile-item">Products</label>
           <ul class="drop-menu">
-            <li><a href="ffs.html">FFS Bags Heavy Duty PE Film</a></li>
+            <li><a href="fibc.html">FIBC or Jumbo Bag</a></li>
             <!-- <li><a style="font-size: 14px;margin: 0px 0 0 25px;" href="#">subProduct1</a></li>
             <li><a style="font-size: 14px;margin: 0px 0 0 25px;" href="#">subProduct2</a></li> -->
+            <li><a href="ffs.html">FFS Bags Heavy Duty PE Film</a></li>
             <li><a href="pp.html">PP Woven Sacks</a></li>
             <li><a href="dpc.html">Disposable Plastic Containers</a></li>
-            <li><a href="pe.html">PE Liners</a></li>
-            <li><a href="5.html">5</a></li>
-            <li><a href="5.html">6</a>
+            <li><a href="pe.html">PE Liner</a></li>
+            <li><a href="ppc.html">PP Container Liner</a>
             </li>
           </ul>
         </li>
+        <li><a href="quality.html">Quality</a></li>
         <li><a href="Sustainability.html">Sustainability</a></li>
         <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="facilities.html">Facilities</a></li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="contactus.html">Contact Us</a></li>
         <!-- <li>
@@ -82,12 +97,15 @@
     <div class="container">
         <div class="row">
           <div data-aos="fade-right" data-aos-duration="1000" class="mob-12 tab-12 des-4 column">
-            <img style="margin-top: -10px;" class="jumboeleimg" src="images/jumboelepic.png"/>
+            <div style="background: url(images/header-01.jpg);margin: 80px 0 50px 0;background-size:cover;" class="video-image">
+              <a class="popup-youtube" href="images/gulf plastic web slider 1.mp4">
+                <img  class="zoomeffect" style="margin: 100px auto;width: 90px;" src="images/play button.png"/>
+              </a>
+            </div>
           </div>
 
           <div data-aos="fade-left" data-aos-duration="3000" style="margin: 60px 0 0 0;" class="mob-6 tab-12 des-8 column">
           <div class="site-heading">
-            <h2>About Us</h2>
             <div class="demo">
                 <div class="tab">
                   <div class="tab-wrapper">
@@ -95,10 +113,7 @@
                     <input id="tab1" type="radio" name="tabsA" checked>
                     <label for="tab1">MISSION</label>
                     <div class="tab-content">
-                      Through a commitment to continuous product innovation and the utilization of advanced manufacturing technologies, Gulf Plastic Industries now represents the market leading producer of flexible intermediate bulk containers (FIBC), polypropylene woven sacks, FFS Bags (FFS heavy duty PE Film) and plastic disposable products.
-                    </br></br></br>
-                      Over two decades of experience in supply of quality products
-                      Diverse product portfolio to cater different packaging needs of the industry Strategically located within the Gulf region for faster operations and delivery Conforms to the most stringent international standards
+                      Our mission is to provide innovative and sustainable plastic packaging solutions that meet the evolving needs of our customers while minimizing environmental impact.
                       <div>
                             <button a href="#" type="button" id="btn_9563" class="btn_9563 m16 btn btn-primary">
                               <span class="txt_1262 ">Read More</span>
@@ -110,7 +125,7 @@
                     <input id="tab2" type="radio" name="tabsA">
                     <label class="tab-button" for="tab2">VISION</label>
                     <div class="tab-content">
-                        Embark on virtual journeys to some of the world's most captivating travel destinations. From the sun-kissed beaches of Bali to the ancient wonders of Machu Picchu, our travel narratives will transport you to exotic locales, offering travel tips, cultural insights, and awe-inspiring photographs.
+                      To be a global leader in responsible plastic packaging, recognized for our commitment to quality, sustainability, and customer satisfaction.
                         <div>
                             <button a href="#" type="button" id="btn_9563" class="btn_9563 m16 btn btn-primary">
                               <span class="txt_1262 ">Read More</span>
@@ -122,8 +137,16 @@
                     <input id="tab3" type="radio" name="tabsA">
                     <label for="tab3">VALUES</label>
                     <div class="tab-content">
-                        Prioritize your well-being with our holistic approach to healthy living. Discover mindfulness techniques, yoga routines, and nutritional guidance to nurture your body and mind. Explore the profound impact of meditation and self-care practices on your overall happiness and balance.
-                        <div>
+                      <b>1.Sustainability:</b> We prioritize sustainability in everything we do, striving to minimize environmental footprint through innovative packaging solutions and responsible practices.
+                    </br>
+                    <b>2.Innovation:</b> We foster a culture of continuous innovation, developing cutting-edge packaging solutions that exceed customer expectations and industry standards.
+                    </br>
+                    <b>3.Integrity:</b> We conduct our business with the highest ethical standards, transparency, and accountability, building trust with our customers, employees, and stakeholders.
+                    </br>
+                    <b>4.Customer Centricity:</b> Our customers are at the heart of our business. We are dedicated to understanding their needs and delivering solutions that add value and drive mutual success.
+                    </br>
+                    <b></b> We value collaboration, diversity, and teamwork. By working together, we leverage our collective strengths to achieve excellence and foster a supportive work environment.
+                      <div>
                             <button a href="#" type="button" id="btn_9563" class="btn_9563 m16 btn btn-primary">
                               <span class="txt_1262 ">Read More</span>
                             </button>
@@ -140,7 +163,7 @@
         </div>
     </div>
 
-   
+<!--    
     <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000" class="container">
         <div class="row">
           <div class="mob-12 tab-12 des-12 column">
@@ -154,9 +177,49 @@
                 </div>
           </div>
         </div>
+    </div> -->
+
+
+    <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000" style="background: #f9f9f9 !important; padding: 0px;border-radius: 30px;" class="container">
+      <div class="row">
+        <div style="padding: 0px !important;" class="mob-12 tab-12 des-12 column">
+          <h3 class="title-around">OUR MAJOR CUSTOMER SEGMENTS</h3>
+    <div class="grid">
+      <figure style="height: 290px;width: 23%;" class="effect-honey">
+        <img src="images/Food .jpg" alt="img04"/>
+        <figcaption>
+          <h2><i>GPI</i> <span>FOOD</span> </h2>
+          <a href="#">View more</a>
+        </figcaption>			
+      </figure>
+      <figure style="height: 290px;width: 23%;" class="effect-honey">
+        <img src="images/Pharama.jpg" alt="img05"/>
+        <figcaption>
+          <h2><i>GPI</i> <span>PHARMA</span></h2>
+          <a href="#">View more</a>
+        </figcaption>			
+      </figure>
+      <figure style="height: 290px;width: 23%;" class="effect-honey">
+        <img src="images/Constriction.jpg" alt="img04"/>
+        <figcaption>
+          <h2> <span>CONSTRUCTION</span></h2>
+          <a href="#">View more</a>
+        </figcaption>			
+      </figure>
+      <figure style="height: 290px;width: 23%;" class="effect-honey">
+        <img src="images/Mining.jpg" alt="img05"/>
+        <figcaption>
+          <h2><i>GPI</i> <span>MINING</span></h2>
+          <a href="#">View more</a>
+        </figcaption>			
+      </figure>
+    </div>
+  
+    </div>
+    </div>
     </div>
 
-    <div data-aos="fade-up" data-aos-duration="1000" class="container">
+    <!-- <div data-aos="fade-up" data-aos-duration="1000" class="container">
         <div style="padding: 35px 0;" class="row">
           <div class="mob-12 tab-6 des-3 column shadow">
            <img class="icon-tab " src="images/GPI ICONS-01.png"/>
@@ -175,17 +238,17 @@
             <p class="icon-tab-p">Customize our Products to suit your package requirements</p>
           </div>
         </div>
-    </div>
+    </div> -->
 
 
 
     <div style="background: #f9f9f9 !important; padding: 0px;border-radius: 30px;" class="container">
       <div class="row">
         <div style="padding: 0px !important;" class="mob-12 tab-12 des-12 column">
-          <h3 style="margin: 0 0 25px 0 !important;" class="title-around">OUR MAJOR CUSTOMER SEGMENTS</h3>
+          <h3 style="margin: 50px 0 45px 0 !important;" class="title-around">PRODUCT RANGES</h3>
           <div class="grid">
             <figure class="effect-sarah">
-              <img src="images/product 1-01.jpg" alt="img13"/>
+              <img src="images/New FFS Bags.jpg" alt="img13"/>
               <figcaption>
                 <h2><span>FFS Bags Heavy Duty PE Film</span></h2>
                 <p>Our 3-layers of co-extrusion Polyethylene films feature a strong tack for face and stability on FFS machines and maintain a strong tear resistance, offer easy film seal, better machine handling and custom print options.</p>
@@ -193,7 +256,7 @@
               </figcaption>			
             </figure>
             <figure class="effect-sarah">
-              <img src="images/product 2-01.jpg" alt="img20"/>
+              <img src="images/New PP WOVEN SACKS.jpg" alt="img20"/>
               <figcaption>
                 <h2><span>PP Woven Sacks</span></h2>
                 <p>We make polypropylene woven bags and sacks according to our customers specifications, concerning dimensions and weights. PP Woven bags are the traditional bags in packaging industry due to their wide variety of usage, flexibility and strength.</p>
@@ -201,7 +264,7 @@
               </figcaption>			
             </figure>
             <figure class="effect-sarah">
-              <img src="images/product 3-01.jpg" alt="img20"/>
+              <img src="images/Disposible pro.jpg" alt="img20"/>
               <figcaption>
                 <h2><span>Disposable Plastic Containers</span></h2>
                 <p>PP, PS, PET cups, bowls and trays. We are committed to adding new products to our range based on our customer's requirements and needs with their right mould and machine. All our products are available in plain or customisable printing and on a transparent or color material.</p>
@@ -209,7 +272,7 @@
               </figcaption>			
             </figure>
             <figure class="effect-sarah">
-              <img src="images/product 4.jpg" alt="img20"/>
+              <img src="images/PE LINERS.jpg" alt="img20"/>
               <figcaption>
                 <h2><span>PE liners</span></h2>
                 <p>Formfit Liners are manufactured and fitted to the internal shape of your intermediate bulk containers. It provides high performance in critical applications such as high speed filling. No pockets or folds trap residual product while emptying through Formfit Liners.</p>
@@ -217,17 +280,17 @@
               </figcaption>			
             </figure>
             <figure class="effect-sarah">
-              <img src="images/product 3-01.jpg" alt="img20"/>
+              <img src="images/prodct 3-01.jpg" alt="img20"/>
               <figcaption>
-                <h2><span>PE liners</span></h2>
+                <h2><span>PP Container Liner</span></h2>
                 <p>...............................................</p>
                 <a href="#">View more</a>
               </figcaption>			
             </figure>
             <figure class="effect-sarah">
-              <img src="images/product 3-01.jpg" alt="img20"/>
+              <img src="images/produc 3-01.jpg" alt="img20"/>
               <figcaption>
-                <h2><span>PE liners</span></h2>
+                <h2><span>FIBC or Jumbo Bag</span></h2>
                 <p>....................................................</p>
                 <a href="#">View more</a>
               </figcaption>			
@@ -287,7 +350,7 @@
 
 
 
-    <div data-aos="fade-up" data-aos-duration="1000" class="container">
+    <!-- <div data-aos="fade-up" data-aos-duration="1000" class="container">
         <div style="margin: 40px 0 0 0" class="row">
             <h3 class="title-around">HOW WE KEEP UP OUR PROMISE</h3>
           <div class="mob-12 tab-6 des-2 column shadow">
@@ -316,28 +379,34 @@
           </div>
         </div>
     </div>
- 
-    
-    <div class="containerr_half">
+  -->
+
+  
+
+
+
+
+
+    <!-- <div class="containerr_half">
       <div class="section">
         <div class="row">
           <div class="mob-12 tab-12 des-12 column">
             <div class="video-image">
               <a class="popup-youtube" href="https://www.youtube.com/watch?v=Vq58oZLXJ-s">
-                <img class="zoomeffect" style="margin: 20px auto;width: 90px;" src="images/play button.png"/>
+                <img class="zoomeffect" style="margin: 60px auto;width: 90px;" src="images/play button.png"/>
               </a>
-                <div class="video-image-text">
+                <!-- <div class="video-image-text">
                 <span>GPI CORPORATE VIDEO</span>
-             </div>
+             </div> 
             </div>
           </div>
         </div>
     </div>
-  </div>
+  </div> -->
 
 
     <div data-aos="fade-up" data-aos-duration="1000" class="container">
-        <div style="margin: 0px 0px 50px 0px;"  class="row">
+        <div style="margin: 50px 0px 50px 0px;"  class="row">
             <h3 class="title-around">REPRESENTING INTERNATIONAL STANDARDS</h3>
           <div class="mob-12 tab-6 des-2 column zoomeffect">
            <img class="logo-tab" src="images/SGC iso 9001 swis accrediation.png"/>
@@ -400,7 +469,7 @@
   
   <div style="border-right: 1px solid #e2e2e2;" class="level-item has-text-centered">
     <div>
-      <p class="title js-count-up" data-value="1000">+</p>
+      <p class="title js-count-up" data-value="1000" data-value="+"></p>
       <p style="font-size: 30px;" class="heading">Clients</p>
     </div>
   </div>
@@ -412,14 +481,8 @@
   </div>
   <div style="border-right: 1px solid #e2e2e2;" class="level-item has-text-centered">
     <div>
-      <p class="title js-count-up" data-value="80"></p>
+      <p class="title js-count-up" data-value="15"></p>
       <p style="font-size: 30px;" class="heading">Global Reach</p>
-    </div>
-  </div>
-  <div style="" class="level-item has-text-centered">
-    <div>
-      <p class="title js-count-up" data-value="50"></p>
-      <p style="font-size: 30px;" class="heading">Achievements</p>
     </div>
   </div>
 </div>
@@ -501,10 +564,10 @@
 
 
 
-    <div class="container">
+    <!-- <div class="container">
         <div style="margin: 27px 0px 0px 0px;" class="row">
-            <!-- <h3 style="margin: 0px !important;" class="title-around">REACH OUT TO US:</h3>
-            <span style="text-align: center;display: block;font-weight: 400;padding: 5px 0 45px 0;font-size: 20px;">For assistance, please contact our customer support team.</span> -->
+            <h3 style="margin: 0px !important;" class="title-around">REACH OUT TO US:</h3>
+            <span style="text-align: center;display: block;font-weight: 400;padding: 5px 0 45px 0;font-size: 20px;">For assistance, please contact our customer support team.</span> 
           <div class="mob-12 tab-12 des-4 column shadow">
            <img class="contact-tab" src="images/contact icons-01.png"/>
            <p class="contact-tab-text">+968&nbsp;2444&nbsp;6688</p>
@@ -521,9 +584,9 @@
             <p class="contact-tab-text">Muscat - Sultanate of Oman</p>
           </div>
         </div>
-    </div>
+    </div> -->
 
-    <div class="container_half">
+    <!-- <div class="container_half">
         <div style="margin: 30px 0;" class="row">
           <div class="mob-12 tab-12 des-12 column">
 
@@ -535,15 +598,15 @@
         </div>
 
 
-           <!-- <img class="business-img" src="images/sybwu.png"/> -->
+           <!-- <img class="business-img" src="images/sybwu.png"/> 
           </div>
         </div>
-    </div>
+    </div> -->
 
 
 
     <!-- footer -->
-<footer class="main-footer">
+<!-- <footer class="main-footer">
   <div  class="container_half">
       <div class="footer-content">
           <div class="row">
@@ -554,7 +617,7 @@
                       <div class="footer-text">
                           <p>dolore magna aliquaea commodo conse quatuis aute irure.</p>
                       </div>
-                      -->
+                      
                       <ul class="ul-footer footer-social">
                           <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                           <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
@@ -601,7 +664,41 @@ product innovation and the utilization of advanced manufacturing technologies, G
           </div>
       </div>
   </div>
-</footer>
+</footer> -->
+
+
+
+
+<!-- main-footer end -->
+<div style="background-color: #282560;" class="footer-bottom">
+  <div class="container_half">
+      <div style="float: none; !important" class="row">
+          <div class="mob-12 tab-12 des-12 column text-center">
+            <div style="padding: 10px 0px 8px 0px;" class="footer-content">
+              <div class="logo-widget footer-widget">
+                  <!--
+                  <div class="footer-text">
+                      <p>dolore magna aliquaea commodo conse quatuis aute irure.</p>
+                  </div>
+                  -->
+                  <ul class="ul-footer footer-social">
+                      <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                      <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                      <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                      <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                  </ul>
+              </div>
+            </div>
+              <div class="copyright">Gulf Plastic Industries Co. (SAOC), PO Box 55, Postal Code 124, Rusayl, Muscat, Sultanate of Oman</div> 
+              <button type="button" id="btn_9566" class="btn_9566 m16 btn btn-primary">
+                <a class="txt_1266" href="contactus.html">Contact Us</a>
+              </button>
+          </div>
+      </div>
+  </div>
+</div>
+
+
 <!-- main-footer end -->
 <div class="footer-bottom">
   <div class="container_half">

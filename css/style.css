@@ -1285,7 +1285,70 @@ figure.effect-sarah:hover p {
 }
 
 
+/*---------------*/
+/***** Honey *****/
+/*---------------*/
 
+figure.effect-honey {
+	background: #4a3753;
+}
+
+figure.effect-honey img {
+	opacity: 0.9;
+	-webkit-transition: opacity 0.35s;
+	transition: opacity 0.35s;
+}
+
+figure.effect-honey:hover img {
+	opacity: 0.5;
+}
+
+figure.effect-honey figcaption::before {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 10px;
+	background: #000000;
+	content: '';
+	-webkit-transform: translate3d(0,10px,0);
+	transform: translate3d(0,10px,0);
+}
+
+figure.effect-honey h2 {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 0.5em 1.5em;
+	width: 100%;
+	text-align: left;
+	-webkit-transform: translate3d(0,-30px,0);
+	transform: translate3d(0,-30px,0);
+  background: #00000080;
+}
+
+figure.effect-honey h2 i {
+	font-style: normal;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(0,-30px,0);
+	transform: translate3d(0,-30px,0);
+}
+
+figure.effect-honey figcaption::before,
+figure.effect-honey h2 {
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+}
+
+figure.effect-honey:hover figcaption::before,
+figure.effect-honey:hover h2,
+figure.effect-honey:hover h2 i {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
 
 
 
@@ -1680,19 +1743,19 @@ p {
 
 .footer-content .logo-widget .footer-social li a {
   position: relative;
-  display: inline-block;
-  width: 42px;
-  height: 42px;
-  line-height: 42px;
-  background: #ffffff;
-  color: #06688d;
-  text-align: center;
-  border-radius: 50%;
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    /* background: #ffffff; */
+    color: #ffffff;
+    text-align: center;
+    border-radius: 50%;
 }
 
 .footer-content .logo-widget .footer-social li a:hover {
   color: #ffffff;
-  background: #06688d;
+  background: #f18021;
 }
 
 .footer-content .logo-widget .logo-box {
@@ -1841,7 +1904,93 @@ p {
   text-align: center;
 }
 
-/* form */
+
+
+/* contact us form */
+
+
+.dropdown {
+  min-width: 15em;
+  position: relative;
+  top: 0;
+  /* margin: 2em; */
+}
+.select {
+  /* background: #2a2f3b; */
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px #ffffff solid;
+  border-radius: 0.5em;
+  padding: 0.6em;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.select-clicked {
+  border: 2px #26489a solid;
+  box-shadow: 0 0 0.8em #26489a;
+}
+.select:hover {
+  background: #f38120;
+  ;
+}
+.caret {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid #fff;
+  transition: 0.3s;
+}
+.caret-rotate {
+  transform: rotate(180deg);
+}
+.menu {
+  list-style: none;
+  padding: 0.2em 0.5em;
+  background: #ffffff;
+  border: 1px #ffffff solid;
+  box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+  border-radius: 0.5em;
+  color: #000000;
+  position: absolute;
+  top: 4em;
+  left: 50%;
+  width: 100%;
+  height: 600%;
+  transform: translateX(-50%);
+  opacity: 0;
+  display: none;
+  transition: 0.2s;
+  z-index: 1;
+  overflow: auto;
+}
+.menu li {
+  padding: 0.7em 0.5em;
+  margin: 0.3em 0;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+.menu li:hover {
+  background: #f38120;
+}
+.active {
+  background: #f38120;
+}
+.menu-open {
+  display: block;
+  opacity: 1;
+  z-index: 99999;
+  margin: -22px 0 0 0;
+}
+
+
+
+
+
+
+
 .container_form {
   position: relative;
   width: 100%;
@@ -3065,14 +3214,14 @@ Kudos to https://stackoverflow.com/a/34816625
   }
 }
 
-/* out team */
+/* out team  */
 /* Utilities */
 .auto-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill,
       minmax(var(--auto-grid-min-size, 24rem), 1fr));
   grid-gap: var(--auto-grid-gap, 0);
-  padding: 0;
+  padding: 100px 0 100px 0;
 }
 
 .flow>*+* {
@@ -4711,4 +4860,130 @@ figure.testimonial .peopl h3 {
     .product-item .product-item-title {font-size: 0.888rem;}
     .product-item .product-item-price {font-size: 0.788rem; padding: 7px 0 0;}
     .product-box {padding: 0 7px;}
+}
+
+/* Our Team */
+.ourteamimg {
+  max-width: 100%;
+  display: block;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: top;
+}
+
+.ourteamsection {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  padding-block: min(20vh, 5rem);
+  text-align: center;
+  width: calc(min(90rem, 90%));
+  margin-inline: auto;
+}
+.ourteamsection p,
+.ourteamsection h2,
+.ourteamsection h3 {
+  letter-spacing: 0.035rem;
+}
+.ourteamsection p {
+  line-height: 1.7;
+  color: #454545;
+  max-width: 70rem;
+  margin: 0 auto;
+  font-size: clamp(0.9rem, 0.825rem + 0.3vw, 1.2rem);
+}
+.ourteamsection h2 {
+  font-size: clamp(3rem, 2.4286rem + 2.2857vw, 5rem);
+  color: #111;
+  text-transform: capitalize;
+  font-weight: 600;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+.ourteamsection .ourteamcards {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(16rem, 100%), 1fr));
+  gap: 2rem;
+}
+@media screen and (min-width: 51rem) {
+  .ourteamsection .ourteamcards {
+    gap: 3.5rem;
+  }
+}
+.ourteamsection .ourteamcards .ourteamcard {
+  position: relative;
+  text-align: left;
+  /*hover states*/
+}
+.ourteamsection .ourteamcards .ourteamcard .social-icon {
+  background: #111;
+  padding: 1rem 1.75rem;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+}
+.ourteamsection .ourteamcards .ourteamcard .social-icon i {
+  color: #fff;
+  font-size: 1.4rem;
+}
+.ourteamsection .ourteamcards .ourteamcard .social-icon:hover i {
+  color: #003ef5;
+}
+.ourteamsection .ourteamcards .ourteamcard img {
+  filter: grayscale(100%);
+  transition: 0.5s ease;
+}
+.ourteamsection .ourteamcards .ourteamcard img:hover {
+  filter: grayscale(0%);
+}
+.ourteamsection .ourteamcards .ourteamcard .card-content-wrapper {
+  margin-left: auto;
+  max-width: 100%;
+}
+.ourteamsection .ourteamcards .ourteamcard .card-content-wrapper .card-content {
+  display: block;
+  background: white;
+  transition: 0.5s ease;
+  padding: 1.5rem 2rem 0 3.2rem;
+}
+.ourteamsection .ourteamcards .ourteamcard .card-content-wrapper .card-content > div {
+  text-align: right;
+}
+.ourteamsection .ourteamcards .ourteamcard .card-content-wrapper .card-content h3,
+.ourteamsection .ourteamcards .ourteamcard .card-content-wrapper .card-content p {
+  text-transform: capitalize;
+}
+.ourteamsection .ourteamcards .ourteamcard .card-content-wrapper .card-content h3 {
+  font-size: clamp(1.15rem, 1.1071rem + 0.1714vw, 1.3rem);
+  font-weight: 800;
+  color: #111;
+  text-align: center;
+}
+.ourteamsection .ourteamcards .ourteamcard .card-content-wrapper .card-content p {
+  color: #454545;
+  font-size: 0.9rem;
+  text-align: center;
+}
+.ourteamsection .ourteamcards .ourteamcard .card-content-wrapper .card-content svg {
+  display: inline-block;
+  text-align: right;
+  width: 60px;
+  color: #003ef5;
+}
+.ourteamsection .ourteamcards .ourteamcard .card-img-wrapper:hover ~ .card-content-wrapper .card-content {
+  background: #003ef5;
+}
+.ourteamsection .ourteamcards .ourteamcard .card-img-wrapper:hover ~ .card-content-wrapper .card-content h3,
+.ourteamsection .ourteamcards .ourteamcard .card-img-wrapper:hover ~ .card-content-wrapper .card-content p,
+.ourteamsection .ourteamcards .ourteamcard .card-img-wrapper:hover ~ .card-content-wrapper .card-content svg {
+  color: #fff;
+}
+.ourteamsection .ourteamcards .ourteamcard .card-content-wrapper:hover .card-content {
+  background: #003ef5;
+}
+.ourteamsection .ourteamcards .ourteamcard .card-content-wrapper:hover .card-content h3,
+.ourteamsection .ourteamcards .ourteamcard .card-content-wrapper:hover .card-content p,
+.ourteamsection .ourteamcards .ourteamcard .card-content-wrapper:hover .card-content svg {
+  color: #fff;
 }
