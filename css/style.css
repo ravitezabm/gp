@@ -386,7 +386,7 @@ nav input {
 .hidden {
   display: none;
 }
-
+/* 
 .header {
   width: 100%;
   height: 100vh;
@@ -394,8 +394,6 @@ nav input {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-
-
   display: block;
   z-index: 1;
   top: 0;
@@ -406,7 +404,7 @@ nav input {
   align-items: center;
   text-align: center;
 
-}
+} */
 
 .header_sub {
   width: 100%;
@@ -923,7 +921,10 @@ h6 {
   padding: var(--tab-padding);
   background-color: var(--tab-active-bg);
   line-height: 2;
-  color: #2a2771;
+  color: #000000;
+  font-size: 18px;
+  line-height: 35px;
+  font-weight: 600;
 }
 
 @media (min-width: 576px) {
@@ -1162,7 +1163,7 @@ h6 {
 .grid figure figcaption {
   padding: 2em;
   color: #fff;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-size: 1.25em;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -1827,6 +1828,8 @@ p {
 .footer-bottom .footer-nav li a {
   position: relative;
   color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .footer-bottom .copyright a:hover,
@@ -2216,6 +2219,8 @@ textarea.input {
 
 .social-media p {
   color: #f38120;
+  font-size: 22px;
+  font-weight: 600;
 }
 
 .social-icons {
@@ -2244,7 +2249,7 @@ textarea.input {
   position: absolute;
   width: 110px;
   height: 100px;
-  border: 22px solid #f38120;
+  /* border: 22px solid #f38120; */
   border-radius: 50%;
   bottom: -77px;
   right: 50px;
@@ -2971,9 +2976,10 @@ Kudos to https://stackoverflow.com/a/34816625
 
 .about-section .content-column .text {
   position: relative;
-  color: #777777;
-  font-size: 18px;
-  line-height: 2em;
+  color: #000000;
+  font-weight: 600; 
+  font-size: 18px; 
+  line-height: 34px;
   margin-bottom: 40px;
 }
 
@@ -3003,7 +3009,7 @@ Kudos to https://stackoverflow.com/a/34816625
   left: 40px;
   bottom: 100px;
   z-index: -1;
-  border: 2px solid #f38120;
+  /* border: 2px solid #f38120; */
 }
 
 .about-section .image-column .inner-column .image {
@@ -3109,7 +3115,7 @@ Kudos to https://stackoverflow.com/a/34816625
 }
 
 .sec-title .title:before {
-  position: absolute;
+  /* position: absolute; */
   content: '';
   right: 0px;
   bottom: 7px;
@@ -3176,6 +3182,8 @@ Kudos to https://stackoverflow.com/a/34816625
 .wcu__item p {
   margin: 0 auto 1rem;
   line-height: 1.4;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .wcu__image,
@@ -3364,6 +3372,12 @@ header
 
 
 /* product detail page */
+
+
+
+
+
+
 .card-wrapper {
   max-width: 1100px;
   margin: 0 auto;
@@ -3371,6 +3385,7 @@ header
 
 img {
   width: 100%;
+  height: 100%;
   display: block;
 }
 
@@ -3411,11 +3426,11 @@ img {
 }
 
 .product-title {
-  font-size: 3rem;
+  font-size: 34px;
   text-transform: capitalize;
-  font-weight: 700;
+  font-weight: 00;
   position: relative;
-  color: #12263a;
+  color: #000000;
   margin: 1rem 0;
 }
 
@@ -3426,7 +3441,7 @@ img {
   bottom: 0;
   height: 4px;
   width: 80px;
-  background: #12263a;
+  /* background: #12263a; */
 }
 
 .product-link {
@@ -3481,7 +3496,9 @@ img {
 }
 
 .product-detail p {
-  font-size: 1rem;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
   padding: 0.3rem;
   opacity: 0.8;
 }
@@ -4751,7 +4768,20 @@ figure.testimonial .peopl h3 {
     padding: 34px 0 0 0;
 }
 
-/*vidoe*/
+
+/*vided main page*/
+.video-wrapper-mainpage {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.video-wrapper-mainpage video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/*video sus*/
 .video-wrapper {
   width: 100%;
   height: 45vh;
@@ -4986,4 +5016,136 @@ figure.testimonial .peopl h3 {
 .ourteamsection .ourteamcards .ourteamcard .card-content-wrapper:hover .card-content p,
 .ourteamsection .ourteamcards .ourteamcard .card-content-wrapper:hover .card-content svg {
   color: #fff;
+}
+
+/*certificates*/
+/* Image gallery stlyling */
+.containercer {
+  max-width: 90%;
+  margin: 80px auto 0;
+  text-align: center;
+}
+
+.containercer__img-holder {
+  max-width: 280px;
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 20px;
+  margin-left: 16px;
+  cursor: pointer;
+}
+
+.containercer .containercer__img-holder:nth-child(3n+1) {
+  margin-left: 0;
+}
+
+.containercer__img-holder img {
+  width: 100%;
+  height: 220px;
+  display: block;
+}
+
+
+/* Popup Styling */
+.img-popupcer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(255, 255, 255, .5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.img-popupcer img {
+  max-width: 900px;
+  width: 100%;
+  opacity: 0;
+  transform: translateY(-100px);
+  -webkit-transform: translateY(-100px);
+  -moz-transform: translateY(-100px);
+  -ms-transform: translateY(-100px);
+  -o-transform: translateY(-100px);
+}
+
+.close-btn {
+  width: 35px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.close-btn .bar {
+  height: 4px;
+  background: #333;
+}
+
+.close-btn .bar:nth-child(1) {
+  transform: rotate(45deg);
+}
+
+.close-btn .bar:nth-child(2) {
+  transform: translateY(-4px) rotate(-45deg);
+}
+
+.opened {
+  display: flex;
+  z-index: 999999;
+}
+
+.opened img {
+  animation: animatepopup 1s ease-in-out .8s;
+  -webkit-animation: animatepopup .3s ease-in-out forwards;
+}
+
+@keyframes animatepopup {
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+  }
+
+}
+
+@media screen and (max-width: 880px) {
+
+  .containercer .containercer__img-holder:nth-child(3n+1) {
+    margin-left: 16px;
+  }
+
+}
+/*map*/
+#containermap {
+  min-width: 320px;
+  max-width: 800px;
+  height: 500px;
+  margin: 1em auto;
+}
+
+.animated-linemap {
+  stroke-dasharray: 8;
+  stroke-dashoffset: 10;
+  animation: dash 5s linear infinite;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 100;
+  }
+
+  to {
+    stroke-dashoffset: 20;
+  }
 }
